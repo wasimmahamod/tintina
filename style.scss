@@ -1,0 +1,14 @@
+@mixin btn($color, $radius) {
+  border: none;
+  background: goldenrod;
+  border-radius: $radius;
+  color: $color;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.submitbtn {
+  @include btn(red, 10px);
+}
+.clickbtn {
+  @include btn(yellow, 5px);
+}
